@@ -1,28 +1,28 @@
 #!/bin/bash
 # shellcheck disable=SC2162
-#echo "Nuxt project name:"
-#read ProjectName
-#echo '{
-#  "name": "'$ProjectName'",
-#  "scripts": {
-#    "dev": "nuxt",
-#    "build": "nuxt build",
-#    "generate": "nuxt generate",
-#    "start": "nuxt start"
-#  },
-#  "config": {
-#    "nuxt": {
-#      "host": "0.0.0.0",
-#      "port": "3333"
-#    }
-#  },
-#  "dependencies": {
-#    "nuxt": "^2.14.6"
-#  }
-#}
-#' > package.json
-#
-#npm install nuxt
+echo "Nuxt project name:"
+read ProjectName
+echo '{
+  "name": "'$ProjectName'",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3333"
+    }
+  },
+  "dependencies": {
+    "nuxt": "^2.14.6"
+  }
+}
+' > package.json
+
+npm install nuxt
 
 mkdir components assets static store pages
 touch nuxt.config.js
